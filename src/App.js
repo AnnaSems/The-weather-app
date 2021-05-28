@@ -38,9 +38,9 @@ function App() {
     let daysOfMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const date = new Date();
 
-    let currentWeek = date.getDay() ? daysOfWeek[date.getDay() - 1] : '';
+    let currentWeek = daysOfWeek[date.getDay() - 1];
     const currentYear = date.getFullYear();
-    let currentMonth = date.getMonth() ? daysOfMonth[date.getMonth()] : '';
+    let currentMonth = daysOfMonth[date.getMonth()];
     const currentDay = date.getDate();
 
     // daysOfWeek = daysOfWeek.filter((day, index) => [index + 1] === currentWeek);
